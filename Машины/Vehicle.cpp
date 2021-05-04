@@ -23,7 +23,7 @@ Vehicle::Vehicle(std::string vehicle)
    StringToVehicle(vehicle);
 }
 
-Vehicle::~Vehicle()
+Vehicle::~Vehicle() // not required, should be deleted
 {
   for (auto it : vehicle)
   {
