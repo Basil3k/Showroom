@@ -38,7 +38,7 @@ void Car::StringToVehicle(const std::string& vehicle)//here string which we get 
     m_price = std::stoi(splitted_vehicle.at(3));
     m_number_of_wheels = std::stoi(splitted_vehicle.at(4));
  }
-
+// method name does not correspond with method body
 std::string Car::VehicleToDb()//this method let save vehicle to database vith flag
 {                             //flag let define vehicle (it car or boat) when take vehicle from database 
    return "" + m_flag + " " + m_model + " "
@@ -58,6 +58,7 @@ bool operator!=(const Car& lhs, const Car& rhs)
 
 bool operator==(const Car& lhs, const Car& rhs)
 {
+   // change "or" to "and"
    return ((lhs.m_color == rhs.m_color)
       or (lhs.m_model == rhs.m_model)
       or (lhs.m_price == rhs.m_price)
