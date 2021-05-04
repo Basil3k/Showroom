@@ -1,4 +1,4 @@
-#pragma once
+`#pragma once
 #include <iostream>
 #include <string>
 #include <vector>
@@ -26,7 +26,7 @@ protected:
    friend std::ostream& operator<<(std::ostream& out, const Vehicle& vehicle);
    friend std::istream& operator>>(std::istream& in, Vehicle& vehicle);
 protected:
-    std::list<Vehicle*> vehicle;
+    std::list<Vehicle*> vehicle; // not used, should be deleted
     std::string m_model;
     std::string m_color;
          size_t m_price;
