@@ -24,5 +24,6 @@ public:
 
    private:
    size_t m_number_of_wheels; // could add unidorm initialization
+   // move "c" to common file. and here use constant variable
    std::string m_flag = {"c"}; //it flag written in database for compare car
 };
