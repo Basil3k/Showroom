@@ -23,6 +23,6 @@ public:
    std::istream& TakeFromConsole(std::istream& in) override;
 
    private:
-   size_t m_number_of_wheels;
+   size_t m_number_of_wheels; // could add unidorm initialization
    std::string m_flag = {"c"}; //it flag written in database for compare car
 };
