@@ -4,7 +4,7 @@
 
 
 #include "Boat.h"
-#include "car.h"
+#include "car.h" // use one style
 #include "Utils.h"
 
 class Showroom
@@ -21,6 +21,6 @@ public:
    bool FindVehicle(Vehicle& vehicle);//flag let define vehicle (it car or boat) when take vehicle from database 
 
 protected:
-   std::list<Vehicle*> vehicles;
+   std::list<Vehicle*> vehicles; // add m_ to class field name
 };
 
