@@ -22,6 +22,7 @@ class Boat : public Vehicle
    friend std::istream& operator>>(std::istream& in, Boat& boat);
 
    private:
-   size_t m_stern_long;
+   size_t m_stern_long; // could add unidorm initialization
+   // move "b" to common file. and here use constant variable
    std::string m_flag = {"b"};
 };
